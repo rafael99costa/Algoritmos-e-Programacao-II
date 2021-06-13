@@ -1,0 +1,24 @@
+#Rafael Santos da Costa
+nomeProd = ['Lapis', 'Caneta', 'Borracha']
+precoProd = [1, 2, 1.5]
+qtdProd = [20, 33, 23]
+
+
+def imprimeProduto(nomeProduto):
+  produto = nomeProd.index(nomeProduto)
+  print(nomeProd[produto])
+
+
+def remover(nomeProduto):
+  indice = nomeProd.index(nomeProduto)
+  nomeProd.remove(nomeProduto)
+  precoProd.pop(indice)
+  qtdProd.pop(indice)
+  
+  print(nomeProd)
+  print(precoProd)
+  print(qtdProd)
+
+imprimeProduto('Caneta')
+
+remover("Lapis")
